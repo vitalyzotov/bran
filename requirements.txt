@@ -1,0 +1,9 @@
+requests
+jinja2
+openai
+fastlogging
+colorama
+tiktoken
+urllib3==1.26.15
+spacy
+arize-phoenix[evals]

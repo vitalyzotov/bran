@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  phoenix:
+    container_name: phoenix
+    image: arizephoenix/phoenix:version-3.22.0
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./phoenix_databases:/phoenix_databases
+    environment:
+      PHOENIX_WORKING_DIR: /phoenix_databases
+      __DANGEROUS__PHOENIX_SPAN_STORAGE_TYPE: "text-files"
